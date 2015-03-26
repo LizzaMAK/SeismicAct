@@ -1,4 +1,4 @@
-package com.nejatdevrim.sesimicact.dummy;
+package com.nejatdevrim.seismicact.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

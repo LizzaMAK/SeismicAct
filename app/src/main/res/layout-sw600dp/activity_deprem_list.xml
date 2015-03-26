@@ -12,7 +12,7 @@
     -->
 
     <fragment android:id="@+id/deprem_list"
-        android:name="com.nejatdevrim.sesimicact.DepremListFragment" android:layout_width="0dp"
+        android:name="com.nejatdevrim.seismicact.DepremListFragment" android:layout_width="0dp"
         android:layout_height="match_parent" android:layout_weight="1"
         tools:layout="@android:layout/list_content" />
 

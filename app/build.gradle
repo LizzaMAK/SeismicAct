@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.nejatdevrim.sesimicact"
+        applicationId "com.nejatdevrim.seismicact"
         minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
@@ -15,6 +15,11 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/baseClasses', 'src/main/java/com.nejatdevrim.seismicact/services']
         }
     }
 }

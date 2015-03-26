@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SesimicAct</string>
+    <string name="app_name">SeismicAct</string>
     <string name="title_deprem_detail">Deprem Detay</string>
     <string name="depremName">Deprem ayrıntı</string>
 

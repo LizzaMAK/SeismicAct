@@ -1,15 +1,14 @@
-package com.nejatdevrim.sesimicact;
+package com.nejatdevrim.seismicact;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 
-import com.nejatdevrim.sesimicact.dummy.DummyContent;
+import com.nejatdevrim.seismicact.dummy.DummyContent;
 
 /**
  * A list fragment representing a list of Depremler. This fragment

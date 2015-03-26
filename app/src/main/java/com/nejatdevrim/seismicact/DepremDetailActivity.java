@@ -1,4 +1,4 @@
-package com.nejatdevrim.sesimicact;
+package com.nejatdevrim.seismicact;
 
 import android.content.Intent;
 import android.os.Bundle;

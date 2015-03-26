@@ -1,4 +1,4 @@
-package com.nejatdevrim.sesimicact;
+package com.nejatdevrim.seismicact;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

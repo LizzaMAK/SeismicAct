@@ -1,4 +1,4 @@
-package com.nejatdevrim.sesimicact;
+package com.nejatdevrim.seismicact;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.nejatdevrim.sesimicact.dummy.DummyContent;
+import com.nejatdevrim.seismicact.dummy.DummyContent;
 
 /**
  * A fragment representing a single Deprem detail screen.

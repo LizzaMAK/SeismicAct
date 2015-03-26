@@ -1,4 +1,4 @@
-package com.nejatdevrim.sesimicact;
+package com.nejatdevrim.seismicact;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,14 +7,13 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.location.Location;
-import android.location.LocationListener;
 import android.util.Log;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import java.util.List;
+import com.nejatdevrim.seismicact.services.locationFinder;
+
 import com.parse.Parse;
-import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseInstallation;
 import com.parse.SaveCallback;
@@ -104,15 +103,17 @@ public class DepremListActivity extends FragmentActivity
     public void getBestLoc() {
         String msg = "";
 
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationFinder lf=new locationFinder(this);
+
+        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
 
-        String provider = locationManager.getBestProvider(criteria, false);
+        //String provider = locationManager.getBestProvider(criteria, false);
 
-        Toast mesaj = Toast.makeText(getApplicationContext(), provider, Toast.LENGTH_SHORT);
-        mesaj.show();
+        //Log.d("",provider);
 
-        Location myLocation = locationManager.getLastKnownLocation(provider);
+        //Location myLocation = locationManager.getLastKnownLocation(provider);
+        Location myLocation = lf.getReferencePoint();
         if (myLocation != null) {
             double latitude = myLocation.getLatitude();
             double longitude = myLocation.getLongitude();
